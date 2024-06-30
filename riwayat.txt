@@ -1,0 +1,3 @@
+History:
+https://laravel.com/docs/11.x/sanctum#spa-authentication
+Read: Sactum Middleware

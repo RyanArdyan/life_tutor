@@ -1,0 +1,5 @@
+Login logic is:
+API version
+1. User fills ini email and password input.
+2. There is validation form
+3. If email and password exist in database then give token and message response

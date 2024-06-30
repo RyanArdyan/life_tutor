@@ -1,0 +1,3 @@
+table users (Ada role pelanggan, tutor dan admin)
+user_id, role_id, name, email, password
+keterangan: setelah pelanggan login dia dapat menjadi tutor dengan cara click tombol jadi tutor

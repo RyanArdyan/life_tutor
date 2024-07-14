@@ -1,5 +1,13 @@
-Login logic is:
-API version
-1. User fills ini email and password input.
-2. There is validation form
-3. If email and password exist in database then give token and message response
+Let's think about the flow.
+1 turor provides many tutorials. this means the relationship is that 1 tutor has many tutorials.
+for example john provides a tutorial on how to drive a car, means we need to provide:
+table tutorial
+0. user_id (1 tutorial belongs to 1 teacher)
+1. name
+2. number_of_meetings
+2. price
+3. date
+4. time
+5. place
+6. description
+7. image

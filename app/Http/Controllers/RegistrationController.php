@@ -39,6 +39,7 @@ class RegistrationController extends Controller
 			]);
 		};
 
+
         // simpan user
         // user::buat([])
         $user = User::create([
@@ -51,13 +52,18 @@ class RegistrationController extends Controller
             'password' => Hash::make($request->password),
         ]);
 
-        // setelah data berhasil disimpan ke database maka
-        // kembalikkan tanggapan berupa json lalu kirimkan data
+        // create token to login
+        $token = $user->createToken('auth_token')->plainTextToken;
+
+        // after the data has been successfully saved to the database
+        // return response as json then send data
         return response()->json([
-            // key status berisi value 200
+            // key status contains value 200
             'status' => 200,
-            // key message berisi value berikut
-            'message' => 'Berhasil Registrasi, silahkan login'
+            // the message key contains the following value
+            'message' => 'Berhasil Registrasi, silahkan login',
+            'token' => $token,
+            'user' => $user
         ]);
     }
 }

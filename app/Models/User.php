@@ -12,11 +12,11 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
-    // default table nya ada tunggal dan jamak dalam bahasa inggris makanya aku atur
+    // the default table name is has single one in english, that's why i set it
     protected $table = 'users';
-    // agar aku bisa menggunakan User::find(1) dan memberitahu primary key column user_id
+    // so i can use User::find(1) and tell it the primary key is the user_id column
     protected $primaryKey = 'user_id';
-    // agar aku bisa menggunakan create massal dan update massal
+    // so that i can use mass create and mass update
     protected $guarded = [];
 
     /**

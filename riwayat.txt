@@ -1,3 +1,2 @@
-History:
-https://laravel.com/docs/11.x/sanctum#spa-authentication
-Read: Sactum Middleware
+link: https://medium.com/@hendriks96/api-authenticate-how-to-authenticate-api-using-laravel-sanctum-c4eeaa99b472
+history:  read the link above, then read part "To get user data we will directly call user data via routes api, so add the following code to routes/api.php"
